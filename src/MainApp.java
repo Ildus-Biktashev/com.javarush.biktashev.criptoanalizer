@@ -60,7 +60,7 @@ public class MainApp {
                     case 4: // шифрование файла
                         System.out.print("Введите путь к файлу для шифрования: ");
                         String inputFileEncrypt = console.nextLine();
-                        if (!validator.isFileExists(inputFileEncrypt)) {
+                        if (validator.isFileExists(inputFileEncrypt)) {
                             System.out.println("Файл не существует.");
                             break;
                         }
@@ -81,7 +81,7 @@ public class MainApp {
                     case 5:  // расшифровка файла с ключом
                         System.out.print("Введите путь к файлу для расшифровки: ");
                         String inputFileDecrypt = console.nextLine();
-                        if (!validator.isFileExists(inputFileDecrypt)) {
+                        if (validator.isFileExists(inputFileDecrypt)) {
                             System.out.println("Файл не существует.");
                             break;
                         }
