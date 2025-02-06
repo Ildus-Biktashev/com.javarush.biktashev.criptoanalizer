@@ -8,6 +8,6 @@ public class Validator {
 
     public boolean isFileExists(String filePath) {
         File file = new File(filePath);
-        return !file.exists();
+        return file.exists();
     }
 }

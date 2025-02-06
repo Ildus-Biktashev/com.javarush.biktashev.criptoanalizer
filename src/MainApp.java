@@ -9,13 +9,14 @@ public class MainApp {
         FileManager fileManager = new FileManager();
 
         while (true) {
-            System.out.println("\nВыберите пункт меню: ");
+            System.out.println("\nМеню:");
             System.out.println("1. Шифрование текста");
             System.out.println("2. Расшифровка текста с ключом");
             System.out.println("3. Brute force (перебор всех ключей)");
             System.out.println("4. Шифрование файла");
             System.out.println("5. Расшифровка файла с ключом");
             System.out.println("0. Выход");
+            System.out.print("Выберите пункт меню: ");
 
             try {
                 int choice = Integer.parseInt(console.nextLine());
@@ -60,7 +61,7 @@ public class MainApp {
                     case 4: // шифрование файла
                         System.out.print("Введите путь к файлу для шифрования: ");
                         String inputFileEncrypt = console.nextLine();
-                        if (validator.isFileExists(inputFileEncrypt)) {
+                        if (!validator.isFileExists(inputFileEncrypt)) {
                             System.out.println("Файл не существует.");
                             break;
                         }
