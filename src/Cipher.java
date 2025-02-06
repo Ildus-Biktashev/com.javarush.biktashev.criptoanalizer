@@ -16,6 +16,7 @@ public class Cipher {
     }
 // метод расшифровка текста
     public String decrypt(String encryptedText, int shift) {
+
         return encrypt(encryptedText, -shift);
     }
 // метод сдвиг символа
