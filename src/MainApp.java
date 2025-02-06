@@ -18,7 +18,7 @@ public class MainApp {
                 int choice = Integer.parseInt(console.nextLine());
 
                 switch (choice) {
-                    case 1:  // Шифрование текста
+                    case 1:  // шифрование текста
                         System.out.print("Введите текст для шифрования: ");
                         String textToEncrypt = console.nextLine();
 
@@ -33,7 +33,7 @@ public class MainApp {
                         }
                         break;
 
-                    case 2:  // Расшифровка текста с ключом
+                    case 2:  // расшифровка текста с ключом
                         System.out.print("Введите текст для расшифровки: ");
                         String textToDecrypt = console.nextLine();
 
@@ -48,7 +48,7 @@ public class MainApp {
                         }
                         break;
 
-                    case 3:  // Brute force
+                    case 3:  // brute force
                         System.out.print("Введите текст для brute force расшифровки: ");
                         String bruteForceText = console.nextLine();
                         bruteForce.decryptByBruteForce(bruteForceText, CaesarCipher.ALPHABET);
