@@ -1,7 +1,7 @@
 import java.util.List;
 
 public class Cipher {
-    private List<Character> alphabet;
+    private final List<Character> alphabet;
 
     public Cipher(List<Character> alphabet) {
         this.alphabet = alphabet;
